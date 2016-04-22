@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+   
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Enter required messages"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+     <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="normal"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/normalet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="##nor*"
+                    android:enabled="false" >
+
+                    <requestFocus />
+                </EditText>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="silent"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/silentet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="##sil*"
+                    android:enabled="false" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="vibrate"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/vibrateet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="##vib*"
+                    android:enabled="false" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/edit"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="edit"
+                    android:text="Edit" />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="save"
+                    android:onClick="save" />
+
+            </TableRow>
+    
+    
+    
+</LinearLayout>
